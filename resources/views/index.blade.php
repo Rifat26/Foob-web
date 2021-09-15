@@ -1,4 +1,5 @@
 <x-header />
+
 <div class="container searchbardiv" id="formsearch">
             <form role="search" method="get" id="searchform">
                 <div class="input-group">
@@ -305,4 +306,5 @@
                 </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end blog-section -->
+        
         <x-footer />

@@ -52,35 +52,22 @@
                                                     class="sr-only">(current)</span></a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1"
+                                            <a class="nav-link" href="#" id="navbarDropdown1"
                                                 role="button" data-toggle="dropdown" aria-haspopup="true"
                                                 aria-expanded="false">Recipes</a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                                <a class="dropdown-item" href="recipes.html">Recipe List</a>
-                                                <a class="dropdown-item" href="recipe-single.html">Recipe Single</a>
-                                                <a class="dropdown-item" href="recipe-index.html">Recipe Index</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="submit-recipe.html">Submit Recipe</a>
-                                            </div>
+                                            
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2"
+                                            <a class="nav-link" href="#" id="navbarDropdown2"
                                                 role="button" data-toggle="dropdown" aria-haspopup="true"
                                                 aria-expanded="false">Events</a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                                <a class="dropdown-item" href="event.html">Event List</a>
-                                                <a class="dropdown-item" href="event-single.html">Event Single</a>
-                                            </div>
+                                            
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3"
+                                            <a class="nav-link" href="#" id="navbarDropdown3"
                                                 role="button" data-toggle="dropdown" aria-haspopup="true"
                                                 aria-expanded="false">Blog</a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                                                <a class="dropdown-item" href="blog.html">Blog List</a>
-                                                <a class="dropdown-item" href="blog-single.html">Blog Single</a>
-                                                <a class="dropdown-item" href="archive.html">Archive</a>
-                                            </div>
+                                            
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4"
@@ -89,7 +76,6 @@
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
                                                 <a class="dropdown-item" href="contact.html">Contact</a>
                                                 <a class="dropdown-item" href="faq.html">FAQ</a>
-                                                <a class="dropdown-item" href="typography.html">Typography</a>
                                                 <a class="dropdown-item" href="my-account.html">My Account</a>
                                                 <div class="dropdown-divider"></div>
                                                 <a class="dropdown-item" href="login.html">Login</a>
