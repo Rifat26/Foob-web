@@ -12,7 +12,7 @@
                 </div>
             </form>
         </div><!-- end searchbardiv -->
-
+        <br><br><br>
         <div class="head-title">
             <div class="container">
                 <h2 class="page-title">Events</h2>
@@ -281,4 +281,4 @@
             </div><!-- end container -->
         </div><!-- end main -->
         
-        <x-header />
+        <x-footer />

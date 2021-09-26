@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\Product_controller;
+use App\Http\Controllers\Connect_controller;
 
 Route::get('/', function () {
     return view('index');
@@ -60,8 +61,18 @@ Route::get('/recipes', function () {
 Route::get('/submit-recipe', function () {
     return view('submit-recipe');
 });
-Route::get('/typography', function () {
-    return view('typography');
+Route::get('/checkout', function () {
+    return view('checkout');
 });
-Route::get('/test', [Product_controller::class, 'index']);
+//Route::get('/test', [Product_controller::class, 'index']);
+Route::get('/index', [Connect_controller::class, 'index']);
+Route::get('/recipes', [Connect_controller::class, 'recipes']);
+Route::get('/event', [Connect_controller::class, 'event']);
+Route::get('/blog', [Connect_controller::class, 'blog']);
+Route::get('/contact', [Connect_controller::class, 'contact']);
+Route::get('/faq', [Connect_controller::class, 'faq']);
+Route::get('/my-account', [Connect_controller::class, 'myaccount']);
+Route::get('/login', [Connect_controller::class, 'login']);
+Route::get('/checkout', [Connect_controller::class, 'checkout']);
+Route::get('/about', [Connect_controller::class, 'about']);
 

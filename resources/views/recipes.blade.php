@@ -13,7 +13,7 @@
                 </div>
             </form>
         </div><!-- end searchbardiv -->
-
+        <br><br><br>
         <div class="head-title">
             <div class="container">
                 <h2 class="page-title">The Recipe</h2>
@@ -30,8 +30,8 @@
                             <div class="col-6 col-md-3">
                                 <div class="recipe-thumb">
                                     <img src="images/content/thumb-1.png" alt="Recipe Image">
-                                    <a href="#" class="bookmarker"><i class="fas fa-bookmark"></i></a>
-                                    <a href="#" class="view-recipe">VIEW RECIPE</a>
+                                    <a href="{{ ('recipes') }}" class="bookmarker"><i class="fas fa-bookmark"></i></a>
+                                    <a href="{{ ('recipes') }}" class="view-recipe">VIEW RECIPE</a>
                                 </div>
                                 <div class="recipe-desc">
                                     <h2 class="recipe-title">
@@ -260,15 +260,7 @@
                     </div><!-- end content -->
                 </div><!-- end primary -->
 
-                <nav class="pagination-container" aria-label="Page navigation">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                </nav>
+                
 
             </div><!-- end container -->
         </div><!-- end main -->

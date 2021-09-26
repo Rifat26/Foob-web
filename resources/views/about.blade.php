@@ -1,5 +1,6 @@
 <x-header />
 
+
 <div class="container searchbardiv" id="formsearch">
             <form role="search" method="get" id="searchform"  >
                 <div class="input-group">
@@ -12,6 +13,7 @@
                 </div>
             </form>
         </div><!-- end searchbardiv -->
+        <br><br><br>
 
         <div class="head-title">
             <div class="container">
@@ -137,5 +139,6 @@
 
             </div><!-- end container -->
         </div><!-- end main -->
+
 
         <x-footer />     

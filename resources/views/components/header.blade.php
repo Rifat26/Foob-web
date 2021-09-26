@@ -48,56 +48,63 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="index.html">Home <span
+                                            <a class="nav-link" href="">Home <span
                                                     class="sr-only">(current)</span></a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link" href="#" id="navbarDropdown1"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">Recipes</a>
+                                            <a class="nav-link" href="recipes">Recipes</a>
                                             
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link" href="#" id="navbarDropdown2"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">Events</a>
+                                            <a class="nav-link" href="event">Events</a>
                                             
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link" href="#" id="navbarDropdown3"
-                                                role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">Blog</a>
+                                            <a class="nav-link" href="blog">Blog</a>
                                             
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4"
                                                 role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">Pages</a>
+                                                aria-expanded="false">Info</a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                                                <a class="dropdown-item" href="contact.html">Contact</a>
-                                                <a class="dropdown-item" href="faq.html">FAQ</a>
-                                                <a class="dropdown-item" href="my-account.html">My Account</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="login.html">Login</a>
+                                                <a class="dropdown-item" href="contact">Contact</a>
+                                                <a class="dropdown-item" href="faq">FAQ</a>
+                                                <a class="dropdown-item" href="my-account">My Account</a>
+                                                
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="about.html">About Us</a>
+                                            <a class="nav-link" href="about">About Us</a>
                                         </li>
+                                        <li class="nav-item dropdown">
+
+                                            <a class="nav-link" href="login" id="navbarDropdown5"
+                                                role="button">Login/Register</a>
+                                        </li>
+                                        
+                                       
                                     </ul>
                                 </div><!-- end navbar-collapse -->
                             </nav><!-- end site-navigation -->
                         </div><!-- end col-md-6 -->
-
+                        
                         <div class="col-md-2">
                             <nav class="social-navigation">
                                 <div class="social-container">
                                     <ul class="social-menu">
+                                        
                                         <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
                                 </div><!-- end social-container -->
+                                <div class="search-container">
+                                    <button type="button">
+                                        <a href="checkout"><i class="fas fa-shopping-cart"></i></a>
+                                            
+                                    </button>
+                                </div>
                                 <div class="search-container">
                                     <button type="button" class="buttonsearch" id="buttonsearch">
                                         <i class="fas fa-search openclosesearch"></i><i

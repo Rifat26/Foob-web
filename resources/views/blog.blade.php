@@ -12,7 +12,7 @@
                 </div>
             </form>
         </div><!-- end searchbardiv -->
-
+        <br><br><br>
         <div class="head-title">
             <div class="container">
                 <h2 class="page-title">Blog Post</h2>
@@ -533,15 +533,7 @@
                             </div><!-- end format-aside hentry -->
                         </div><!-- end content -->
 
-                        <nav class="pagination-container" aria-label="Page navigation">
-                            <ul class="pagination justify-content-start">
-                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                            </ul>
-                        </nav>
+                        
                     </div><!-- end primary -->
 
                     <div id="secondary" class="col-md-4">

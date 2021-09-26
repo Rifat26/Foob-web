@@ -1,15 +1,3 @@
-<div class="footer-instagram">
-    <div class="ig-btn"><a href="#" class="ig-follow"><i class="fab fa-instagram"></i>&nbsp;Follow Me on
-            Instagram</a></div><!-- end ig-btn -->
-    <ul class="ig-feed">
-        <li><a href="#"><img src="images/content/ig-1.png" alt="photo"></a></li>
-        <li><a href="#"><img src="images/content/ig-2.png" alt="photo"></a></li>
-        <li><a href="#"><img src="images/content/ig-3.png" alt="photo"></a></li>
-        <li><a href="#"><img src="images/content/ig-4.png" alt="photo"></a></li>
-        <li><a href="#"><img src="images/content/ig-5.png" alt="photo"></a></li>
-        <li><a href="#"><img src="images/content/ig-6.png" alt="photo"></a></li>
-    </ul>
-</div><!-- end footer-instagram -->
 <div class="footer-social">
     <div class="container"><a href="#"><i class="fab fa-facebook-square"></i>Facebook</a><a href="#"><i
                 class="fab fa-twitter"></i>Twitter</a><a href="#"><i
