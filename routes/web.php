@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\Product_controller;
+use App\Http\Controllers\Information_controller;
 use App\Http\Controllers\Connect_controller;
+use App\Http\Controllers\Category_controller;
 
 Route::get('/', function () {
     return view('index');
@@ -64,15 +66,18 @@ Route::get('/submit-recipe', function () {
 Route::get('/checkout', function () {
     return view('checkout');
 });
+
 //Route::get('/test', [Product_controller::class, 'index']);
-Route::get('/index', [Connect_controller::class, 'index']);
-Route::get('/recipes', [Connect_controller::class, 'recipes']);
-Route::get('/event', [Connect_controller::class, 'event']);
-Route::get('/blog', [Connect_controller::class, 'blog']);
+Route::get('/', [Information_controller::class, 'index']);
+Route::get('/recipes', [Information_controller::class, 'recipes']);
+Route::get('/event', [Information_controller::class, 'event']);
+Route::get('/blog', [Information_controller::class, 'blog']);
 Route::get('/contact', [Connect_controller::class, 'contact']);
 Route::get('/faq', [Connect_controller::class, 'faq']);
 Route::get('/my-account', [Connect_controller::class, 'myaccount']);
 Route::get('/login', [Connect_controller::class, 'login']);
 Route::get('/checkout', [Connect_controller::class, 'checkout']);
 Route::get('/about', [Connect_controller::class, 'about']);
-
+Route::get('/cat', [Category_controller::class, 'index']);
+Route::get('/recipe_single', [Information_controller::class, 'recipe_single']);
+Route::get('/event_single', [Information_controller::class, 'event_single']);

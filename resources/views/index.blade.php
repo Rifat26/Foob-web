@@ -1,5 +1,3 @@
-<x-header />
-
 <div class="container searchbardiv" id="formsearch">
             <form role="search" method="get" id="searchform">
                 <div class="input-group">
@@ -41,61 +39,28 @@
         <div class="choice-section">
             <div class="container">
                 <div class="section-title">
-                    <h3>Editor's Choice</h3>
+                    <h3>Category</h3>
                 </div><!-- end section-title -->
                 <div class="row">
+                 @foreach ($category as $item)
+                     
+                
                     <div class="col-6 col-md-3">
+
                         <div class="big-bone"><a href="#" class="figure-caption">
+
                                 <div class="caption-inner">
-                                    <p>FOOD</p><span>20 Recipes</span>
+                                    <p> {{$item->categoty_name}}  </p><span>20 Recipes</span>
                                 </div>
                             </a>
-                            <figure><img src="images/content/food-l.png" alt="food l"></figure>
+                            <figure><img src="{{$item->category_img}}" alt="food l"></figure>
                         </div>
-                        <div class="small-bone">
-                            <figure><img src="images/content/food-s.png" alt="food s"></figure>
+                        {{-- <div class="small-bone"> 
+                             <figure><img src="images/content/food-s.png" alt="food s"></figure> 
                             <figure><img src="images/content/food-s2.png" alt="food s"></figure>
-                        </div>
+                        </div>--}}
                     </div><!-- end col -->
-                    <div class="col-6 col-md-3">
-                        <div class="big-bone"><a href="#" class="figure-caption">
-                                <div class="caption-inner">
-                                    <p>BEVERAGE</p><span>16 Recipes</span>
-                                </div>
-                            </a>
-                            <figure><img src="images/content/beverage-l.png" alt="beverage l"></figure>
-                        </div>
-                        <div class="small-bone">
-                            <figure><img src="images/content/beverage-s.png" alt="beverage s"></figure>
-                            <figure><img src="images/content/beverage-s2.png" alt="beverage s"></figure>
-                        </div>
-                    </div><!-- end col -->
-                    <div class="col-6 col-md-3">
-                        <div class="big-bone"><a href="#" class="figure-caption">
-                                <div class="caption-inner">
-                                    <p>DESSERT</p><span>18 Recipes</span>
-                                </div>
-                            </a>
-                            <figure><img src="images/content/dessert-l.png" alt="dessert l"></figure>
-                        </div>
-                        <div class="small-bone">
-                            <figure><img src="images/content/dessert-s.png" alt="dessert s"></figure>
-                            <figure><img src="images/content/dessert-s2.png" alt="dessert s"></figure>
-                        </div>
-                    </div><!-- end col -->
-                    <div class="col-6 col-md-3">
-                        <div class="big-bone"><a href="#" class="figure-caption">
-                                <div class="caption-inner">
-                                    <p>PUDDING</p><span>28 Recipes</span>
-                                </div>
-                            </a>
-                            <figure><img src="images/content/pudding-l.png" alt="pudding l"></figure>
-                        </div>
-                        <div class="small-bone">
-                            <figure><img src="images/content/pudding-s.png" alt="pudding s"></figure>
-                            <figure><img src="images/content/pudding-ss.png" alt="pudding s"></figure>
-                        </div>
-                    </div><!-- end col -->
+                    @endforeach
                 </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end editor-section -->
@@ -125,6 +90,7 @@
                                 aliquip commodo consequat.</p>
                         </div>
                     </div><!-- end col -->
+                    
                 </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end features -->
@@ -134,16 +100,19 @@
                     <h3>Special Features</h3>
                 </div><!-- end section-title -->
                 <div class="row">
+                    @foreach ($recipes as $item)
+                        
+                    
                     <div class="col-6 col-md-3">
-                        <div class="recipe-thumb"><img src="images/content/thumb-1.png" alt="Recipe Image"><a href="#"
+                        <div class="recipe-thumb"><img src={{$item->all_recipes_img}} alt="Recipe Image"><a href="#"
                                 class="bookmarker"><i class="fas fa-bookmark"></i></a><a href="#"
                                 class="view-recipe">VIEW RECIPE</a></div>
                         <div class="recipe-desc">
-                            <h2 class="recipe-title"><a href="#">Salad Nicoise</a></h2>
-                            <p><em>By Lina Sukowati</em></p><span><i class="fas fa-clock"></i>&nbsp;9 Minutes</span>
+                            <h2 class="recipe-title"><a href="#">{{$item->all_recipes_tittel}}</a></h2>
+                            <p><em>By Lina Sukowati</em></p><span><i class="fas fa-clock"></i>&nbsp;{{$item->all_recipes_time}}</span>
                         </div><!-- end recipe-desc -->
                     </div><!-- end col -->
-                    <div class="col-6 col-md-3">
+                    {{-- <div class="col-6 col-md-3"> 
                         <div class="recipe-thumb"><img src="images/content/thumb-2.png" alt="Recipe Image"><a href="#"
                                 class="bookmarker"><i class="fas fa-bookmark"></i></a><a href="#"
                                 class="view-recipe">VIEW RECIPE</a></div>
@@ -205,7 +174,8 @@
                             <h2 class="recipe-title"><a href="#">Fresh Spaghetti with Tuna</a></h2>
                             <p><em>By Lina Sukowati</em></p><span><i class="fas fa-clock"></i>&nbsp;45 Minutes</span>
                         </div><!-- end recipe-desc -->
-                    </div><!-- end col -->
+                    </div><!-- end col -->--}}
+                    @endforeach
                 </div><!-- end row -->
                 <div class="row">
                     <div class="centered"><a href="#" class="btn btn-line">VIEW ALL RECIPES</a></div>
@@ -307,4 +277,4 @@
             </div><!-- end container -->
         </div><!-- end blog-section -->
         
-        <x-footer />
+         

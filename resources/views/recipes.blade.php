@@ -1,47 +1,47 @@
-<x-header />
+<div class="container searchbardiv" id="formsearch">
+    <form role="search" method="get" id="searchform">
+        <div class="input-group">
+            <input type="text" id="searchbox" class="form-control" name="s">
+            <div class="input-group-btn">
+                <button class="btn btn-search" id="searchsubmit" type="submit">
+                    <strong>Search</strong>
+                </button>
+            </div>
+        </div>
+    </form>
+</div><!-- end searchbardiv -->
+<br><br><br>
+<div class="head-title">
+    <div class="container">
+        <h2 class="page-title">The Recipe</h2>
+    </div><!-- end container -->
+</div><!-- end head-title -->
+
+<div id="main">
+    <div class="container">
+
+        <div id="primary" class="content-area fullwidth">
+            <div id="content" class="site-content">
+
+                <div class="row">
+                    @foreach ($recipes as $item)
 
 
-        <div class="container searchbardiv" id="formsearch">
-            <form role="search" method="get" id="searchform">
-                <div class="input-group">
-                    <input type="text" id="searchbox" class="form-control" name="s">
-                    <div class="input-group-btn">
-                        <button class="btn btn-search" id="searchsubmit" type="submit">
-                            <strong>Search</strong>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div><!-- end searchbardiv -->
-        <br><br><br>
-        <div class="head-title">
-            <div class="container">
-                <h2 class="page-title">The Recipe</h2>
-            </div><!-- end container -->
-        </div><!-- end head-title -->
-
-        <div id="main">
-            <div class="container">
-
-                <div id="primary" class="content-area fullwidth">
-                    <div id="content" class="site-content">
-
-                        <div class="row">
-                            <div class="col-6 col-md-3">
-                                <div class="recipe-thumb">
-                                    <img src="images/content/thumb-1.png" alt="Recipe Image">
-                                    <a href="{{ ('recipes') }}" class="bookmarker"><i class="fas fa-bookmark"></i></a>
-                                    <a href="{{ ('recipes') }}" class="view-recipe">VIEW RECIPE</a>
-                                </div>
-                                <div class="recipe-desc">
-                                    <h2 class="recipe-title">
-                                        <a href="#">Salad Nicoise</a>
-                                    </h2>
-                                    <p><em>By Lina Sukowati</em></p>
-                                    <span><i class="fas fa-clock"></i>&nbsp;9 Minutes</span>
-                                </div><!-- end recipe-desc -->
-                            </div><!-- end col -->
-                            <div class="col-6 col-md-3">
+                    <div class="col-6 col-md-3">
+                        <div class="recipe-thumb">
+                            <img src={{$item->all_recipes_img}} alt="Recipe Image">
+                            <a href="{{ ('recipes') }}" class="bookmarker"><i class="fas fa-bookmark"></i></a>
+                            <a href="{{ ('recipes') }}" class="view-recipe">VIEW RECIPE</a>
+                        </div>
+                        <div class="recipe-desc">
+                            <h2 class="recipe-title">
+                                <a href="#">{{$item->all_recipes_tittel}}</a>
+                            </h2>
+                            <p><em>By Lina Sukowati</em></p>
+                            <span><i class="fas fa-clock"></i>&nbsp;{{$item->all_recipes_time}}</span>
+                        </div><!-- end recipe-desc -->
+                    </div><!-- end col -->
+                    {{-- <div class="col-6 col-md-3"> 
                                 <div class="recipe-thumb">
                                     <img src="images/content/thumb-2.png" alt="Recipe Image">
                                     <a href="#" class="bookmarker"><i class="fas fa-bookmark"></i></a>
@@ -253,16 +253,14 @@
                                     <p><em>By Lina Sukowati</em></p>
                                     <span><i class="fas fa-clock"></i>&nbsp;45 Minutes</span>
                                 </div><!-- end recipe-desc -->
-                            </div><!-- end col -->
+                            </div><!-- end col -->--}}
+                    @endforeach
+                </div><!-- end row -->
 
-                        </div><!-- end row -->
+            </div><!-- end content -->
+        </div><!-- end primary -->
 
-                    </div><!-- end content -->
-                </div><!-- end primary -->
 
-                
 
-            </div><!-- end container -->
-        </div><!-- end main -->
-
-        <x-footer />
+    </div><!-- end container -->
+</div><!-- end main -->

@@ -20,58 +20,77 @@ class Connect_controller extends Controller
       return view('index');
 
     }
-    public function recipes()
-    {
+     public function recipes()
+     {
         
-      return view('recipes');
+       $information = DB::table('information')->first();
+
+         echo view('recipes', ['information' => $information]);
       
-    }
+     }
     public function event()
     {
-        
-      return view('event');
+      $information = DB::table('information')->first();
+
+      echo view('event', ['information' => $information]);
+       
+      
       
     }
     public function blog()
     {
         
-      return view('blog');
+      $information = DB::table('information')->first();
+
+      echo view('blog', ['information' => $information]);
       
     }
     
     public function contact()
     {
         
-      return view('contact');
+      $information = DB::table('information')->first();
+
+      echo view('contact', ['information' => $information]);
       
     }
     public function faq()
     {
         
-      return view('faq');
+      $information = DB::table('information')->first();
+
+      echo view('faq', ['information' => $information]);
       
     }
     public function myaccount()
     {
         
-      return view('my-account');
+      $information = DB::table('information')->first();
+
+      echo view('my-account', ['information' => $information]);
       
     }
     public function login()
     {
         
-      return view('login');
+      $information = DB::table('information')->first();
+
+      echo view('login', ['information' => $information]);
       
     }
     public function checkout()
     {
         
-      return view('checkout');
+      $information = DB::table('information')->first();
+
+      echo view('checkout', ['information' => $information]);
     }
     public function about()
     {
         
-      return view('about');
+      $information = DB::table('information')->first();
+
+      echo view('about', ['information' => $information]);
     }
       
 

@@ -1,4 +1,4 @@
-<x-header />
+@include('master.head')
 
 <Body>
 <br><br><br><br>
@@ -134,4 +134,4 @@
     </script>
     </body>
 
-        <x-footer />
+    @include('master.foot')

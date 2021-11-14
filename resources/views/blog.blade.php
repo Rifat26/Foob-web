@@ -1,4 +1,4 @@
-<x-header />
+    
 
         <div class="container searchbardiv" id="formsearch">
             <form role="search" method="get" id="searchform">
@@ -22,9 +22,12 @@
         <div id="main">
             <div class="container">
                 <div class="row">
+                    
 
                     <div id="primary" class="content-area col-md-8">
                         <div id="content" class="site-content">
+
+                            @foreach ($blog as $item)
 
                             <div class="post format-image hentry">
 
@@ -59,33 +62,23 @@
                                     </div><!-- end entry-header -->
 
                                     <h1 class="entry-title">
-                                        <a href="#">Typi Non Habent Claritatem Insitam Est Usus Legentis in Qui Facit
-                                            Eorum Claritatem</a>
+                                        <a href="#">{{$item->blog_title}}</a>
                                     </h1>
 
                                     <div class="entry-media">
-                                        <img src="images/content/media-01.png" alt="">
+                                        <img src={{$item->blog_img}} alt="">
                                     </div><!-- end entry-media -->
 
                                     <div class="entry-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                                            wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                                            dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-                                            dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                                            dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
-                                            feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option
-                                            congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-                                            Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
-                                            claritatem.</p>
+                                        <p>{{$item->blog_discription}}</p>
                                     </div>
 
                                 </div><!-- end inner -->
 
-                            </div><!-- end format-image hentry -->
+                             </div><!-- end format-image hentry -->
+                             @endforeach 
 
-                            <div class="post format-video hentry">
+                            {{--<div class="post format-video hentry">
 
                                 <div class="entry-format">
                                     <div class="entry-meta">
@@ -530,7 +523,7 @@
 
                                 </div><!-- end inner -->
 
-                            </div><!-- end format-aside hentry -->
+                            </div><!-- end format-aside hentry -->--}}
                         </div><!-- end content -->
 
                         
@@ -645,4 +638,4 @@
             </div><!-- end container -->
         </div><!-- end main -->
         
-        <x-footer />
+        

@@ -41,10 +41,10 @@
             </div><!-- end col -->
             <div class="col-md-6">
                 <ul class="bottom-nav">
-                    <li><a href="http://www.bootstrapmb.com/">Home</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">{{$information->info_mobile}}</a></li>
+                    <li><a href="#">{{$information->info_email}}</a></li>
+                    <li><a href="#">{{$information->info_address}}</a></li>
+                    
                 </ul>
             </div><!-- end col -->
         </div><!-- end row -->

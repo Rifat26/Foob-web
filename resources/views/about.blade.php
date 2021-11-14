@@ -1,4 +1,4 @@
-<x-header />
+@include('master.head')
 
 
 <div class="container searchbardiv" id="formsearch">
@@ -141,4 +141,4 @@
         </div><!-- end main -->
 
 
-        <x-footer />     
+        @include('master.foot')     
