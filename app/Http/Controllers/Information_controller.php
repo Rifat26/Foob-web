@@ -87,6 +87,13 @@ class Information_controller extends Controller
         echo view('master.foot',$data);
 
     }
+
+    public function deshboard()
+    {
+        echo view('admin_master.header');
+        echo view('deshboard');
+        echo view('admin_master.footer');
+    }
     
 
     

@@ -66,6 +66,9 @@ Route::get('/submit-recipe', function () {
 Route::get('/checkout', function () {
     return view('checkout');
 });
+Route::get('/deshboard', function () {
+    return view('deshboard');
+});
 
 //Route::get('/test', [Product_controller::class, 'index']);
 Route::get('/', [Information_controller::class, 'index']);
@@ -81,3 +84,4 @@ Route::get('/about', [Connect_controller::class, 'about']);
 Route::get('/cat', [Category_controller::class, 'index']);
 Route::get('/recipe_single', [Information_controller::class, 'recipe_single']);
 Route::get('/event_single', [Information_controller::class, 'event_single']);
+Route::get('/deshboard', [Information_controller::class, 'deshboard']);
