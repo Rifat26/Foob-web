@@ -45,9 +45,9 @@ Route::get('/event', function () {
 Route::get('/faq', function () {
     return view('faq');
 });
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
 Route::get('/my-account', function () {
     return view('my-account');
 });
@@ -70,18 +70,31 @@ Route::get('/deshboard', function () {
     return view('deshboard');
 });
 
-//Route::get('/test', [Product_controller::class, 'index']);
+//Route::get('/index', [Information_controller::class, 'index']);
 Route::get('/', [Information_controller::class, 'index']);
-Route::get('/recipes', [Information_controller::class, 'recipes']);
 Route::get('/event', [Information_controller::class, 'event']);
 Route::get('/blog', [Information_controller::class, 'blog']);
 Route::get('/contact', [Connect_controller::class, 'contact']);
 Route::get('/faq', [Connect_controller::class, 'faq']);
 Route::get('/my-account', [Connect_controller::class, 'myaccount']);
-Route::get('/login', [Connect_controller::class, 'login']);
+// Route::get('/login', [Connect_controller::class, 'login']);
 Route::get('/checkout', [Connect_controller::class, 'checkout']);
 Route::get('/about', [Connect_controller::class, 'about']);
 Route::get('/cat', [Category_controller::class, 'index']);
 Route::get('/recipe_single', [Information_controller::class, 'recipe_single']);
 Route::get('/event_single', [Information_controller::class, 'event_single']);
-Route::get('/deshboard', [Information_controller::class, 'deshboard']);
+// Route::get('/deshboard', [Information_controller::class, 'deshboard']);
+
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
+
+Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
+Route::get('/recipes', [Information_controller::class, 'recipes']);
+
+
+});
+
+Route::middleware(['auth:sanctum','verified','authuser'])->group(function(){
+
+});

@@ -77,11 +77,29 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="about">About Us</a>
                                         </li>
+                                        @if(Route::has('login'))
+                                        @auth
                                         <li class="nav-item dropdown">
 
-                                            <a class="nav-link" href="login" id="navbarDropdown5"
-                                                role="button">Login/Register</a>
+                                            <a class="nav-link" href="{{ route('logout') }}"onclick="event.preventDefault(); document.getElementById('logout-form').submit();" id="navbarDropdown5"role="button">Logout</a>
                                         </li>
+                                        <form id="logout-form" method="POST" action="{{ route('logout') }}">
+                                            @csrf
+                                            
+                                           </form>
+                                        @else
+                                        <li class="nav-item dropdown">
+
+                                            <a class="nav-link" href="{{ route('login') }}" id="navbarDropdown5"role="button">Login</a>
+                                        </li>
+                                        @if(Route::has('register'))
+                                        <li class="nav-item dropdown">
+
+                                            <a class="nav-link" href="{{ route('register') }}" id="navbarDropdown5"role="button">Register</a>
+                                        </li>
+                                        @endif
+                                        @endauth
+                                        @endif
                                         
                                        
                                     </ul>
