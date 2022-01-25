@@ -88,12 +88,7 @@ class Information_controller extends Controller
 
     }
 
-    public function deshboard()
-    {
-        echo view('admin_master.header');
-        echo view('deshboard');
-        echo view('admin_master.footer');
-    }
+    
     
 
     

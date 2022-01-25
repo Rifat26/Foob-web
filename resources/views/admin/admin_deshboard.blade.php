@@ -174,32 +174,32 @@
                         <table class="table browser mt-4 no-border">
                             <tbody>
                                 <tr>
-                                    <td style="width:40px"><img src="../assets/images/browser/chrome-logo.png" alt=logo /></td>
+                                    <td style="width:40px"><img src="admin_assets/assets/images/browser/chrome-logo.png" alt=logo /></td>
                                     <td>Google Chrome</td>
                                     <td class="text-right"><span class="label label-light-info">23%</span></td>
                                 </tr>
                                 <tr>
-                                    <td><img src="../assets/images/browser/firefox-logo.png" alt=logo /></td>
+                                    <td><img src="admin_assets/assets/images/browser/firefox-logo.png" alt=logo /></td>
                                     <td>Mozila Firefox</td>
                                     <td class="text-right"><span class="label label-light-success">15%</span></td>
                                 </tr>
                                 <tr>
-                                    <td><img src="../assets/images/browser/safari-logo.png" alt=logo /></td>
+                                    <td><img src="admin_assets/assets/images/browser/safari-logo.png" alt=logo /></td>
                                     <td>Apple Safari</td>
                                     <td class="text-right"><span class="label label-light-primary">07%</span></td>
                                 </tr>
                                 <tr>
-                                    <td><img src="../assets/images/browser/internet-logo.png" alt=logo /></td>
+                                    <td><img src="admin_assets/assets/images/browser/internet-logo.png" alt=logo /></td>
                                     <td>Internet Explorer</td>
                                     <td class="text-right"><span class="label label-light-warning">09%</span></td>
                                 </tr>
                                 <tr>
-                                    <td><img src="../assets/images/browser/opera-logo.png" alt=logo /></td>
+                                    <td><img src="admin_assets/assets/images/browser/opera-logo.png" alt=logo /></td>
                                     <td>Opera mini</td>
                                     <td class="text-right"><span class="label label-light-danger">23%</span></td>
                                 </tr>
                                 <tr>
-                                    <td><img src="../assets/images/browser/internet-logo.png" alt=logo /></td>
+                                    <td><img src="admin_assets/assets/images/browser/internet-logo.png" alt=logo /></td>
                                     <td>Microsoft edge</td>
                                     <td class="text-right"><span class="label label-light-megna">09%</span></td>
                                 </tr>
@@ -276,7 +276,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex flex-row">
-                            <div class=""><img src="../assets/images/users/1.jpg" alt="user" class="img-circle" width="100"></div>
+                            <div class=""><img src="admin_assets/assets/images/users/1.jpg" alt="user" class="img-circle" width="100"></div>
                             <div class="pl-3">
                                 <h3 class="font-medium">Daniel Kristeen</h3>
                                 <h6>UIUX Designer</h6>
@@ -317,9 +317,9 @@
                         <div class="row text-center">
                             <div class="col-12 mb-4">
                                 <h4>Followers</h4></div>
-                            <div class="col"><span class="round" data-toggle="tooltip" title="Varun"><img src="../assets/images/users/4.jpg" alt="user" width="45"/></span></div>
-                            <div class="col"><span class="round" data-toggle="tooltip" title="Alia"><img src="../assets/images/users/2.jpg" alt="user" width="45"/></span></div>
-                            <div class="col"><span class="round" data-toggle="tooltip" title="Akshay"><img src="../assets/images/users/3.jpg" alt="user" width="45"/></span></div>
+                            <div class="col"><span class="round" data-toggle="tooltip" title="Varun"><img src="admin_assets/assets/images/users/4.jpg" alt="user" width="45"/></span></div>
+                            <div class="col"><span class="round" data-toggle="tooltip" title="Alia"><img src="admin_assets/assets/images/users/2.jpg" alt="user" width="45"/></span></div>
+                            <div class="col"><span class="round" data-toggle="tooltip" title="Akshay"><img src="admin_assets/assets/images/users/3.jpg" alt="user" width="45"/></span></div>
                             <div class="col"><span class="round" data-toggle="tooltip" title="More">5+</span></div>
                         </div>
                     </div>
@@ -338,7 +338,7 @@
                             <ul class="chat-list">
                                 <!--chat Row -->
                                 <li>
-                                    <div class="chat-img"><img src="../assets/images/users/1.jpg" alt="user" /></div>
+                                    <div class="chat-img"><img src="admin_assets/assets/images/users/1.jpg" alt="user" /></div>
                                     <div class="chat-content">
                                         <h5>James Anderson</h5>
                                         <div class="box bg-light-info">Lorem Ipsum is simply dummy text of the printing & type setting industry.</div>
@@ -347,7 +347,7 @@
                                 </li>
                                 <!--chat Row -->
                                 <li>
-                                    <div class="chat-img"><img src="../assets/images/users/2.jpg" alt="user" /></div>
+                                    <div class="chat-img"><img src="admin_assets/assets/images/users/2.jpg" alt="user" /></div>
                                     <div class="chat-content">
                                         <h5>Bianca Doe</h5>
                                         <div class="box bg-light-success">It’s Great opportunity to work.</div>
@@ -372,7 +372,7 @@
                                 </li>
                                 <!--chat Row -->
                                 <li>
-                                    <div class="chat-img"><img src="../assets/images/users/3.jpg" alt="user" /></div>
+                                    <div class="chat-img"><img src="admin_assets/assets/images/users/3.jpg" alt="user" /></div>
                                     <div class="chat-content">
                                         <h5>Angelina Rhodes</h5>
                                         <div class="box bg-light-primary">Well we have good budget for the project</div>
@@ -403,13 +403,13 @@
                             <div class="message-widget">
                                 <!-- Message -->
                                 <a href="#">
-                                    <div class="user-img"> <img src="../assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online float-right"></span> </div>
+                                    <div class="user-img"> <img src="admin_assets/assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online float-right"></span> </div>
                                     <div class="mail-contnet">
                                         <h5>Pavan kumar</h5> <span class="mail-desc">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been.</span> <span class="time">9:30 AM</span> </div>
                                 </a>
                                 <!-- Message -->
                                 <a href="#">
-                                    <div class="user-img"> <img src="../assets/images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy float-right"></span> </div>
+                                    <div class="user-img"> <img src="admin_assets/assets/images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy float-right"></span> </div>
                                     <div class="mail-contnet">
                                         <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
                                 </a>
@@ -421,19 +421,19 @@
                                 </a>
                                 <!-- Message -->
                                 <a href="#">
-                                    <div class="user-img"> <img src="../assets/images/users/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline float-right"></span> </div>
+                                    <div class="user-img"> <img src="admin_assets/assets/images/users/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline float-right"></span> </div>
                                     <div class="mail-contnet">
                                         <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
                                 </a>
                                 <!-- Message -->
                                 <a href="#">
-                                    <div class="user-img"> <img src="../assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online float-right"></span> </div>
+                                    <div class="user-img"> <img src="admin_assets/assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online float-right"></span> </div>
                                     <div class="mail-contnet">
                                         <h5>Pavan kumar</h5> <span class="mail-desc">Welcome to the Elite Admin</span> <span class="time">9:30 AM</span> </div>
                                 </a>
                                 <!-- Message -->
                                 <a href="#">
-                                    <div class="user-img"> <img src="../assets/images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy float-right"></span> </div>
+                                    <div class="user-img"> <img src="admin_assets/assets/images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy float-right"></span> </div>
                                     <div class="mail-contnet">
                                         <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
                                 </a>
@@ -475,28 +475,28 @@
                     <ul class="mt-3 chatonline">
                         <li><b>Chat option</b></li>
                         <li>
-                            <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                            <a href="javascript:void(0)"><img src="admin_assets/assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                            <a href="javascript:void(0)"><img src="admin_assets/assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                            <a href="javascript:void(0)"><img src="admin_assets/assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                            <a href="javascript:void(0)"><img src="admin_assets/assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                            <a href="javascript:void(0)"><img src="admin_assets/assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                            <a href="javascript:void(0)"><img src="admin_assets/assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                            <a href="javascript:void(0)"><img src="admin_assets/assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                            <a href="javascript:void(0)"><img src="admin_assets/assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
                         </li>
                     </ul>
                 </div>

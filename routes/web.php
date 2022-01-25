@@ -17,6 +17,7 @@ use App\Http\Controllers\Product_controller;
 use App\Http\Controllers\Information_controller;
 use App\Http\Controllers\Connect_controller;
 use App\Http\Controllers\Category_controller;
+use App\Http\Controllers\Admin_controller;
 
 Route::get('/', function () {
     return view('index');
@@ -66,8 +67,11 @@ Route::get('/submit-recipe', function () {
 Route::get('/checkout', function () {
     return view('checkout');
 });
-Route::get('/deshboard', function () {
-    return view('deshboard');
+Route::get('/admin_deshboard', function () {
+    return view('admin_deshboard');
+});
+Route::get('/admin_settings', function () {
+    return view('admin_settings');
 });
 
 //Route::get('/index', [Information_controller::class, 'index']);
@@ -83,7 +87,9 @@ Route::get('/about', [Connect_controller::class, 'about']);
 Route::get('/cat', [Category_controller::class, 'index']);
 Route::get('/recipe_single', [Information_controller::class, 'recipe_single']);
 Route::get('/event_single', [Information_controller::class, 'event_single']);
-// Route::get('/deshboard', [Information_controller::class, 'deshboard']);
+Route::get('/admin_deshboard', [Admin_controller::class, 'admin_deshboard']);
+Route::get('/admin_settings', [Admin_controller::class, 'admin_settings']);
+
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
