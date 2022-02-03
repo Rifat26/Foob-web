@@ -31,43 +31,43 @@
                                 <div class="form-group row">
                                     <label for="example-text-input" class="col-2 col-form-label">Name</label>
                                     <div class="col-6">
-                                        <input type="text" id="name" class="form-control" placeholder="Name">
+                                        <input type="text" id="name" class="form-control" placeholder="Name" value="{{$all_data->vendor_name}}">
                                     </div>
                                 </div>
                         <div class="form-group row">
                             <label for="example-text-input" class="col-2 col-form-label">Address</label>
                             <div class="col-6">
-                                <input type="text" id="address" class="form-control" placeholder="Address">
+                                <input type="text" id="address" class="form-control" placeholder="Address" value="{{$all_data->vendor_address}}">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-email-input" class="col-2 col-form-label">Email</label>
                             <div class="col-6">
-                                <input type="text" id="email" class="form-control" placeholder="Email">
+                                <input type="text" id="email" class="form-control" placeholder="Email" value="{{$all_data->vendor_email}}">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+                            <label for="example-tel-input" class="col-2 col-form-label">Phone</label>
                             <div class="col-6">
-                                <input type="text" id="number" class="form-control" placeholder="Number">
+                                <input type="text" id="number" class="form-control" placeholder="Number" value="{{$all_data->vendor_phone}}">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-fb-input" class="col-2 col-form-label">Facebook</label>
                             <div class="col-6">
-                                <input type="text" id="facebook" class="form-control" placeholder="Facebook">
+                                <input type="text" id="facebook" class="form-control" placeholder="Facebook" value="{{$all_data->fb_link}}">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-inst-input" class="col-2 col-form-label">Instagram</label>
                             <div class="col-6">
-                                <input type="text" id="instagram" class="form-control" placeholder="Instagram">
+                                <input type="text" id="instagram" class="form-control" placeholder="Instagram" value="{{$all_data->inst_link}}">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-twit-input" class="col-2 col-form-label">Twitter</label>
                             <div class="col-6">
-                                <input type="text" id="twitter" class="form-control" placeholder="Twitter">
+                                <input type="text" id="twitter" class="form-control" placeholder="Twitter" value="{{$all_data->twit_link}}">
                             </div>
                         </div>
 
@@ -96,15 +96,14 @@
                                 </div>
                             </div>
                         </div>
-                    
                     </div>
+                </div>
                     <div class="form-actions">
                         <div class="card-body">
                             <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Update</button>
                             <button type="button" class="btn btn-dark">Cancel</button>
                         </div>
                     </div>
-                </div>
             </form>
         </div>
     </div>

@@ -25,8 +25,10 @@ class Admin_controller extends Controller
 
     public function admin_settings()
     {
+        $data['all_data'] = DB::table('settings')->where('settings_id', '1')->first();
+
         echo view('admin_master.header');
-        echo view('admin/admin_settings');
+        echo view('admin/admin_settings', $data);
         echo view('admin_master.footer');
     }
 }
