@@ -18,6 +18,7 @@ use App\Http\Controllers\Information_controller;
 use App\Http\Controllers\Connect_controller;
 use App\Http\Controllers\Category_controller;
 use App\Http\Controllers\Admin_controller;
+use App\Http\Controllers\Setting_controller;
 
 Route::get('/', function () {
     return view('index');
@@ -70,9 +71,9 @@ Route::get('/checkout', function () {
 Route::get('/admin_deshboard', function () {
     return view('admin_deshboard');
 });
-Route::get('/admin_settings', function () {
-    return view('admin_settings');
-});
+// Route::get('/admin_settings', function () {
+//     return view('admin_settings');
+// });
 
 //Route::get('/index', [Information_controller::class, 'index']);
 Route::get('/', [Information_controller::class, 'index']);
@@ -88,7 +89,8 @@ Route::get('/cat', [Category_controller::class, 'index']);
 Route::get('/recipe_single', [Information_controller::class, 'recipe_single']);
 Route::get('/event_single', [Information_controller::class, 'event_single']);
 Route::get('/admin_deshboard', [Admin_controller::class, 'admin_deshboard']);
-Route::get('/admin_settings', [Admin_controller::class, 'admin_settings']);
+Route::get('/admin_settings', [Setting_controller::class, 'edit'])->name('edit');
+Route::post('/admin_settings', [Setting_controller::class, 'update'])->name('update');
 
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

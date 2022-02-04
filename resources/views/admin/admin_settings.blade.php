@@ -21,7 +21,8 @@
     <div class="col-lg-12">
         <div class="card">
            
-            <form action="#">
+            <form action="" method="POST">
+                @csrf
                 <div class="card-body">
                     <h2 class="card-title">Settings Info</h2>
                 </div>
@@ -31,43 +32,43 @@
                                 <div class="form-group row">
                                     <label for="example-text-input" class="col-2 col-form-label">Name</label>
                                     <div class="col-6">
-                                        <input type="text" id="name" class="form-control" placeholder="Name" value="{{$all_data->vendor_name}}">
+                                        <input type="text" id="name" class="form-control" name="name" placeholder="Name" value="{{ $setting->vendor_name }}">
                                     </div>
                                 </div>
                         <div class="form-group row">
                             <label for="example-text-input" class="col-2 col-form-label">Address</label>
                             <div class="col-6">
-                                <input type="text" id="address" class="form-control" placeholder="Address" value="{{$all_data->vendor_address}}">
+                                <input type="text" id="address" class="form-control" name="address" placeholder="Address" value="{{ $setting->vendor_address }}">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-email-input" class="col-2 col-form-label">Email</label>
                             <div class="col-6">
-                                <input type="text" id="email" class="form-control" placeholder="Email" value="{{$all_data->vendor_email}}">
+                                <input type="text" id="email" class="form-control" name="email" placeholder="Email" value="{{ $setting->vendor_email }}">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-tel-input" class="col-2 col-form-label">Phone</label>
                             <div class="col-6">
-                                <input type="text" id="number" class="form-control" placeholder="Number" value="{{$all_data->vendor_phone}}">
+                                <input type="text" id="number" class="form-control" name="phone" placeholder="Number" value="{{ $setting->vendor_phone }}">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-fb-input" class="col-2 col-form-label">Facebook</label>
                             <div class="col-6">
-                                <input type="text" id="facebook" class="form-control" placeholder="Facebook" value="{{$all_data->fb_link}}">
+                                <input type="text" id="facebook" class="form-control" name="fb" placeholder="Facebook" value="{{ $setting->fb_link }}">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-inst-input" class="col-2 col-form-label">Instagram</label>
                             <div class="col-6">
-                                <input type="text" id="instagram" class="form-control" placeholder="Instagram" value="{{$all_data->inst_link}}">
+                                <input type="text" id="instagram" class="form-control" name="inst" placeholder="Instagram" value="{{ $setting->inst_link }}">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-twit-input" class="col-2 col-form-label">Twitter</label>
                             <div class="col-6">
-                                <input type="text" id="twitter" class="form-control" placeholder="Twitter" value="{{$all_data->twit_link}}">
+                                <input type="text" id="twitter" class="form-control" name="twit" placeholder="Twitter" value="{{ $setting->twit_link }}">
                             </div>
                         </div>
 
@@ -78,7 +79,7 @@
                                     <span class="input-group-text">Upload</span>
                                 </div>
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                    <input type="file" class="custom-file-input" name="logo" id="inputGroupFile01">
                                     <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                                 </div>
                             </div>
@@ -91,7 +92,7 @@
                                     <span class="input-group-text">Upload</span>
                                 </div>
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <input type="file" class="custom-file-input" name="fav_icon" id="inputGroupFile02">
                                     <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
                                 </div>
                             </div>

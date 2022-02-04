@@ -15,20 +15,10 @@ class Admin_controller extends Controller
      * @return \Illuminate\Http\Response
     */
 
-
     public function admin_deshboard()
     {
         echo view('admin_master.header');
         echo view('admin/admin_deshboard');
-        echo view('admin_master.footer');
-    }
-
-    public function admin_settings()
-    {
-        $data['all_data'] = DB::table('settings')->where('settings_id', '1')->first();
-
-        echo view('admin_master.header');
-        echo view('admin/admin_settings', $data);
         echo view('admin_master.footer');
     }
 }
