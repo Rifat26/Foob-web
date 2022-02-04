@@ -32,6 +32,8 @@
 
                         <div class="col col-md-2">
                             <div class="site-branding navbar-brand">
+                                {{-- <a href="#"><img src="images/logo.png" alt="Food Recipe Web Template"
+                                    title="Taplak"></a> --}}
                                 <a href="#"><h1>{{$information->info_name}}</h1></a>
                             </div><!-- end logo -->
                         </div><!-- end col-md-3 -->
